@@ -1,0 +1,53 @@
+project:
+  name: State-Level Family Planning Unmet Need Pattern Analysis and Classification
+  dataset: C:\Users\sagni\Downloads\State-Level Family Planning Unmet Need Pattern
+    Analysis and Classification\unmetneedforFPNFHS3.csv
+  project_directory: C:\Users\sagni\Downloads\State-Level Family Planning Unmet Need
+    Pattern Analysis and Classification
+data:
+  rows: 30
+  columns: 12
+  state_column: India/States/UTs
+  target_source: NFHS III (2005-06) Total unmet need-Total
+  classification_target: Unmet_Need_Category
+  features:
+  - Categories
+  - NFHS III (2005-06) Total unmet need-Rural
+  - NFHS III (2005-06) Total unmet need-Urban
+  - NFHS III (2005-06) Unmet need for spacing-Total
+  - NFHS III (2005-06) Unmet need for spacing-Rural
+  - NFHS III (2005-06) Unmet need for spacing-Urban
+  - NFHS III (2005-06) Unmet need for limiting-Total
+  - NFHS III (2005-06) Unmet need for limiting-Rural
+  - NFHS III (2005-06) Unmet need for limiting-Urban
+model:
+  type: Artificial Neural Network
+  framework: TensorFlow/Keras
+  hidden_layers:
+  - 64
+  - 32
+  - 16
+  activation: ReLU
+  output_activation: Softmax
+  optimizer: Adam
+  loss: Sparse Categorical Crossentropy
+  epochs: 200
+  batch_size: 4
+classification:
+  method: Quantile-based classification
+  categories:
+  - High
+  - Low
+  - Moderate
+evaluation:
+  test_accuracy: 0.75
+  test_loss: 0.7256636619567871
+output_files:
+  h5_model: C:\Users\sagni\Downloads\State-Level Family Planning Unmet Need Pattern
+    Analysis and Classification\family_planning_model.h5
+  pkl_preprocessor: C:\Users\sagni\Downloads\State-Level Family Planning Unmet Need
+    Pattern Analysis and Classification\family_planning_preprocessor.pkl
+  yaml_config: C:\Users\sagni\Downloads\State-Level Family Planning Unmet Need Pattern
+    Analysis and Classification\family_planning_config.yaml
+  json_metadata: C:\Users\sagni\Downloads\State-Level Family Planning Unmet Need Pattern
+    Analysis and Classification\family_planning_metadata.json

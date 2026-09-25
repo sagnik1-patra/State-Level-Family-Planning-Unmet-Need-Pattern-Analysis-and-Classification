@@ -1,0 +1,110 @@
+{
+    "project_name": "State-Level Family Planning Unmet Need Pattern Analysis and Classification",
+    "dataset_path": "C:\\Users\\sagni\\Downloads\\State-Level Family Planning Unmet Need Pattern Analysis and Classification\\unmetneedforFPNFHS3.csv",
+    "dataset_rows": 30,
+    "dataset_columns": 12,
+    "original_columns": [
+        "Categories",
+        "India/States/UTs",
+        "NFHS III (2005-06) Total unmet need-Total",
+        "NFHS III (2005-06) Total unmet need-Rural",
+        "NFHS III (2005-06) Total unmet need-Urban",
+        "NFHS III (2005-06) Unmet need for spacing-Total",
+        "NFHS III (2005-06) Unmet need for spacing-Rural",
+        "NFHS III (2005-06) Unmet need for spacing-Urban",
+        "NFHS III (2005-06) Unmet need for limiting-Total",
+        "NFHS III (2005-06) Unmet need for limiting-Rural",
+        "NFHS III (2005-06) Unmet need for limiting-Urban"
+    ],
+    "processed_columns": [
+        "Categories",
+        "India/States/UTs",
+        "NFHS III (2005-06) Total unmet need-Total",
+        "NFHS III (2005-06) Total unmet need-Rural",
+        "NFHS III (2005-06) Total unmet need-Urban",
+        "NFHS III (2005-06) Unmet need for spacing-Total",
+        "NFHS III (2005-06) Unmet need for spacing-Rural",
+        "NFHS III (2005-06) Unmet need for spacing-Urban",
+        "NFHS III (2005-06) Unmet need for limiting-Total",
+        "NFHS III (2005-06) Unmet need for limiting-Rural",
+        "NFHS III (2005-06) Unmet need for limiting-Urban",
+        "Unmet_Need_Category"
+    ],
+    "state_column": "India/States/UTs",
+    "target_source_column": "NFHS III (2005-06) Total unmet need-Total",
+    "target_column": "Unmet_Need_Category",
+    "feature_columns": [
+        "Categories",
+        "NFHS III (2005-06) Total unmet need-Rural",
+        "NFHS III (2005-06) Total unmet need-Urban",
+        "NFHS III (2005-06) Unmet need for spacing-Total",
+        "NFHS III (2005-06) Unmet need for spacing-Rural",
+        "NFHS III (2005-06) Unmet need for spacing-Urban",
+        "NFHS III (2005-06) Unmet need for limiting-Total",
+        "NFHS III (2005-06) Unmet need for limiting-Rural",
+        "NFHS III (2005-06) Unmet need for limiting-Urban"
+    ],
+    "number_of_features": 9,
+    "classes": [
+        "High",
+        "Low",
+        "Moderate"
+    ],
+    "training_samples": 22,
+    "testing_samples": 8,
+    "test_accuracy": 0.75,
+    "test_loss": 0.7256636619567871,
+    "classification_report": {
+        "High": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 2.0
+        },
+        "Low": {
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1-score": 0.8571428571428571,
+            "support": 3.0
+        },
+        "Moderate": {
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1-score": 0.5,
+            "support": 3.0
+        },
+        "accuracy": 0.75,
+        "macro avg": {
+            "precision": 0.8055555555555555,
+            "recall": 0.7777777777777778,
+            "f1-score": 0.719047619047619,
+            "support": 8.0
+        },
+        "weighted avg": {
+            "precision": 0.8229166666666666,
+            "recall": 0.75,
+            "f1-score": 0.7089285714285714,
+            "support": 8.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            2,
+            0,
+            0
+        ],
+        [
+            0,
+            3,
+            0
+        ],
+        [
+            1,
+            1,
+            1
+        ]
+    ],
+    "model_file": "C:\\Users\\sagni\\Downloads\\State-Level Family Planning Unmet Need Pattern Analysis and Classification\\family_planning_model.h5",
+    "preprocessor_file": "C:\\Users\\sagni\\Downloads\\State-Level Family Planning Unmet Need Pattern Analysis and Classification\\family_planning_preprocessor.pkl",
+    "configuration_file": "C:\\Users\\sagni\\Downloads\\State-Level Family Planning Unmet Need Pattern Analysis and Classification\\family_planning_config.yaml"
+}

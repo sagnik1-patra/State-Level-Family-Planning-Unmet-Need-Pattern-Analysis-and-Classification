@@ -1,0 +1,8 @@
+Rank,Model,Accuracy,Accuracy_Percentage,AIS_Features_Selected,Total_Candidate_Features,AIS_Best_Fitness
+1,Logistic Regression,1.0,100.0,5,9,0.888889
+2,Random Forest,1.0,100.0,5,9,0.888889
+3,KNN,0.875,87.5,5,9,0.888889
+4,SVM,0.875,87.5,5,9,0.888889
+5,Artificial Neural Network,0.875,87.5,5,9,0.888889
+6,Decision Tree,0.75,75.0,5,9,0.888889
+7,Gradient Boosting,0.75,75.0,5,9,0.888889

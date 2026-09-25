@@ -1,0 +1,9 @@
+State_Region,Actual_Category,Predicted_Category,Correct_Prediction,Actual_Unmet_Need_Value,Probability_High,Probability_Low,Probability_Moderate,Prediction_Confidence
+Uttar Pradesh,High,Moderate,False,21.2,0.3911199,0.21639049,0.3924896,0.3924896
+Madhya Pradesh,Moderate,Low,False,11.3,0.30811667,0.35648388,0.33539945,0.35648388
+Assam,Moderate,Moderate,True,10.5,0.33011326,0.26039997,0.40948683,0.40948683
+Haryana,Low,Moderate,False,8.3,0.33447057,0.3026149,0.36291456,0.36291456
+India,Moderate,High,False,12.8,0.3486367,0.3151576,0.3362057,0.3486367
+Himachal Pradesh,Low,Moderate,False,7.2,0.32222772,0.3122681,0.3655042,0.3655042
+Mizoram,High,Moderate,False,17.3,0.3454736,0.30123276,0.3532937,0.3532937
+West Bengal,Low,Low,True,8.0,0.28373447,0.43938342,0.27688214,0.43938342

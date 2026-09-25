@@ -1,0 +1,64 @@
+project:
+  name: State-Level Family Planning Unmet Need Pattern Analysis and Classification
+  optimization_method: Particle Swarm Optimization
+  dataset: C:\Users\sagni\Downloads\State-Level Family Planning Unmet Need Pattern
+    Analysis and Classification\unmetneedforFPNFHS3.csv
+  output_directory: C:\Users\sagni\Downloads\State-Level Family Planning Unmet Need
+    Pattern Analysis and Classification
+pso:
+  algorithm: Binary Particle Swarm Optimization
+  swarm_size: 30
+  iterations: 30
+  inertia_weight: 0.729
+  cognitive_coefficient: 1.49445
+  social_coefficient: 1.49445
+  maximum_velocity: 6.0
+  feature_penalty: 0.02
+  best_fitness: 0.888888888888889
+  candidate_feature_count: 9
+  selected_feature_count: 5
+  selected_features:
+  - NFHS III (2005-06) Total unmet need-Rural
+  - NFHS III (2005-06) Total unmet need-Urban
+  - NFHS III (2005-06) Unmet need for spacing-Urban
+  - NFHS III (2005-06) Unmet need for limiting-Total
+  - NFHS III (2005-06) Unmet need for limiting-Urban
+  rejected_features:
+  - Categories
+  - NFHS III (2005-06) Unmet need for spacing-Total
+  - NFHS III (2005-06) Unmet need for spacing-Rural
+  - NFHS III (2005-06) Unmet need for limiting-Rural
+  best_particle:
+  - 0
+  - 1
+  - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  - 0
+  - 1
+classification:
+  target_source: NFHS III (2005-06) Total unmet need-Total
+  target: Unmet_Need_Category
+  classes:
+  - High
+  - Low
+  - Moderate
+  lower_threshold: 9.533333333333333
+  upper_threshold: 14.533333333333333
+ann:
+  input_features: 5
+  hidden_layers:
+  - 64
+  - 32
+  - 16
+  optimizer: Adam
+  learning_rate: 0.001
+  loss: Sparse Categorical Crossentropy
+  maximum_epochs: 200
+  batch_size: 4
+  test_accuracy: 0.75
+best_model:
+  name: Random Forest
+  accuracy: 1.0

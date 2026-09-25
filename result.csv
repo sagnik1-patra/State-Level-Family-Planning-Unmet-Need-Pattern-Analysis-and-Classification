@@ -1,0 +1,8 @@
+Rank,Model,Accuracy,Accuracy_Percentage
+1,Logistic Regression,1.0,100.0
+2,Random Forest,1.0,100.0
+3,SVM,1.0,100.0
+4,KNN,0.875,87.5
+5,Decision Tree,0.75,75.0
+6,Gradient Boosting,0.75,75.0
+7,Artificial Neural Network,0.25,25.0
